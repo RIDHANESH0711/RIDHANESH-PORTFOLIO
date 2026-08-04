@@ -1,32 +1,351 @@
-%PDF-Ridhanesh_T_Resume.pdf
-1 0 obj
-<< /Type /Catalog /Pages 2 0 R >>
-endobj
-2 0 obj
-<< /Type /Pages /Kids [3 0 R] /Count 1 >>
-endobj
-3 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>
-endobj
-4 0 obj
-<< /Length 120 >>
-stream
-BT /F1 24 Tf 72 720 Td (RIDHANESH T) Tj 0 -36 Td /F1 14 Tf (AI & Data Science Student) Tj 0 -28 Td (ridhan0711@gmail.com) Tj ET
-endstream
-endobj
-5 0 obj
-<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
-endobj
-xref
-0 6
-0000000000 65535 f 
-0000000009 00000 n 
-0000000058 00000 n 
-0000000115 00000 n 
-0000000266 00000 n 
-0000000431 00000 n 
-trailer
-<< /Size 6 /Root 1 0 R >>
-startxref
-498
-%%EOF
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ridhanesh T – Resume</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+    font-size: 10.5pt;
+    line-height: 1.45;
+    color: #1a1a1a;
+    background: #fff;
+  }
+
+  .page {
+    width: 210mm;
+    min-height: 297mm;
+    max-height: 297mm;
+    margin: 0 auto;
+    padding: 11mm 14mm 10mm 14mm;
+    overflow: hidden;
+  }
+
+  /* ── HEADER ── */
+  .header {
+    border-bottom: 2px solid #1a1a1a;
+    padding-bottom: 7px;
+    margin-bottom: 9px;
+  }
+
+  .name {
+    font-size: 22pt;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    color: #0f0f0f;
+    line-height: 1.1;
+  }
+
+  .title-tag {
+    font-size: 9pt;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #1d6fa4;
+    margin-top: 2px;
+    margin-bottom: 6px;
+  }
+
+  .contact-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 18px;
+    font-size: 8.8pt;
+    color: #333;
+    font-weight: 400;
+  }
+
+  .contact-row span { white-space: nowrap; }
+
+  .contact-row a {
+    color: #1d6fa4;
+    text-decoration: none;
+  }
+
+  /* ── SECTIONS ── */
+  .section { margin-bottom: 8px; }
+
+  .section-title {
+    font-size: 8.5pt;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    color: #1d6fa4;
+    border-bottom: 1px solid #c8dce8;
+    padding-bottom: 2px;
+    margin-bottom: 5px;
+  }
+
+  /* ── TWO-COLUMN SKILLS ── */
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 24px;
+  }
+
+  .skill-group-label {
+    font-size: 8.8pt;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 1px;
+  }
+
+  .skill-group {
+    margin-bottom: 4px;
+  }
+
+  .skill-tags {
+    font-size: 8.8pt;
+    color: #2e2e2e;
+  }
+
+  /* ── EXPERIENCE / PROJECT ENTRIES ── */
+  .entry { margin-bottom: 5px; }
+
+  .entry-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 2px;
+  }
+
+  .entry-title {
+    font-size: 9.5pt;
+    font-weight: 600;
+    color: #0f0f0f;
+  }
+
+  .entry-subtitle {
+    font-size: 8.8pt;
+    font-weight: 400;
+    color: #444;
+  }
+
+  .entry-date {
+    font-size: 8.5pt;
+    color: #555;
+    white-space: nowrap;
+  }
+
+  .entry-meta {
+    font-size: 8.5pt;
+    color: #1d6fa4;
+    margin-bottom: 2px;
+    font-style: italic;
+  }
+
+  ul.bullets {
+    padding-left: 13px;
+    margin-top: 2px;
+  }
+
+  ul.bullets li {
+    font-size: 8.8pt;
+    color: #222;
+    margin-bottom: 1.5px;
+    line-height: 1.4;
+  }
+
+  /* ── EDUCATION ── */
+  .edu-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+  }
+
+  .edu-main { font-size: 9.5pt; font-weight: 600; color: #0f0f0f; }
+  .edu-sub   { font-size: 8.8pt; color: #444; }
+  .edu-date  { font-size: 8.5pt; color: #555; }
+  .edu-detail{ font-size: 8.5pt; color: #2e2e2e; margin-top: 1px; }
+
+  /* ── CERTS ── */
+  .cert-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3px 16px;
+  }
+
+  .cert-item {
+    font-size: 8.5pt;
+    color: #2e2e2e;
+    padding-left: 10px;
+    position: relative;
+  }
+
+  .cert-item::before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    color: #1d6fa4;
+    font-size: 8pt;
+  }
+
+  /* ── BOTTOM ROW ── */
+  .bottom-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 24px;
+  }
+
+  .soft-tags {
+    font-size: 8.8pt;
+    color: #2e2e2e;
+    line-height: 1.6;
+  }
+
+  .lang-item {
+    font-size: 8.8pt;
+    color: #2e2e2e;
+    line-height: 1.7;
+  }
+
+  /* ── SUMMARY ── */
+  .summary-text {
+    font-size: 8.8pt;
+    color: #222;
+    line-height: 1.5;
+  }
+
+  @media print {
+    body { background: #fff; }
+    .page { margin: 0; box-shadow: none; }
+    a { color: #1d6fa4 !important; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="name">RIDHANESH T</div>
+    <div class="title-tag">B.Tech Artificial Intelligence &amp; Data Science</div>
+    <div class="contact-row">
+      <span>📍 Tiruppur, Tamil Nadu, India</span>
+      <span>📞 +91 89256 33994</span>
+      <span>✉ <a href="mailto:ridhan0711@gmail.com">ridhan0711@gmail.com</a></span>
+      <span>🔗 <a href="https://github.com/RIDHANESH0711">github.com/RIDHANESH0711</a></span>
+      <span>🔗 <a href="https://www.linkedin.com/in/ridhanesh-t-286092424">linkedin.com/in/ridhanesh-t-286092424</a></span>
+    </div>
+  </div>
+
+  <!-- PROFESSIONAL SUMMARY -->
+  <div class="section">
+    <div class="section-title">Professional Summary</div>
+    <p class="summary-text">
+      Motivated B.Tech Artificial Intelligence &amp; Data Science student with a strong foundation in Python, Java, Machine Learning, and Computer Vision. Experienced in developing AI-powered real-world applications, including a face-recognition-based Smart Attendance System built with OpenCV and MySQL. Passionate about leveraging AI and software development to solve complex problems innovatively. Seeking internship opportunities where I can apply my skills, collaborate with cross-functional teams, and contribute to impactful technology solutions across AI, software engineering, and data-driven domains.
+    </p>
+  </div>
+
+  <!-- EDUCATION -->
+  <div class="section">
+    <div class="section-title">Education</div>
+    <div class="edu-row">
+      <div>
+        <div class="edu-main">VSB Engineering College &nbsp;|&nbsp; <span style="font-weight:400;">Anna University</span></div>
+        <div class="edu-sub">Bachelor of Technology (B.Tech) – Artificial Intelligence &amp; Data Science</div>
+      </div>
+      <div class="edu-date">Expected Mar 2029</div>
+    </div>
+    <div class="edu-detail">Current CGPA: <strong>7.55</strong></div>
+  </div>
+
+  <!-- TECHNICAL SKILLS -->
+  <div class="section">
+    <div class="section-title">Technical Skills</div>
+    <div class="skills-grid">
+      <div class="skill-group">
+        <div class="skill-group-label">Programming Languages</div>
+        <div class="skill-tags">Python &nbsp;·&nbsp; Java &nbsp;·&nbsp; C</div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-group-label">Databases</div>
+        <div class="skill-tags">MySQL &nbsp;·&nbsp; SQL</div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-group-label">AI / Machine Learning</div>
+        <div class="skill-tags">Machine Learning (Fundamentals) &nbsp;·&nbsp; Computer Vision &nbsp;·&nbsp; Face Recognition &nbsp;·&nbsp; OpenCV</div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-group-label">Developer Tools</div>
+        <div class="skill-tags">Git &nbsp;·&nbsp; GitHub &nbsp;·&nbsp; Visual Studio Code</div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-group-label">Core CS Subjects</div>
+        <div class="skill-tags">OOP &nbsp;·&nbsp; DBMS &nbsp;·&nbsp; Data Structures &amp; Algorithms (Learning) &nbsp;·&nbsp; Problem Solving</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- INTERNSHIP -->
+  <div class="section">
+    <div class="section-title">Internship</div>
+    <div class="entry">
+      <div class="entry-header">
+        <div>
+          <span class="entry-title">Web Development Intern</span>
+          <span class="entry-subtitle"> &nbsp;|&nbsp; Brainery Spot Technology</span>
+        </div>
+        <div class="entry-date">Internship Program</div>
+      </div>
+      <ul class="bullets">
+        <li>Participated in a structured web development internship, gaining hands-on exposure to modern development workflows and best practices.</li>
+        <li>Collaborated with a development team on project-based tasks involving front-end implementation, debugging, and code review processes.</li>
+        <li>Developed practical skills in software collaboration, iterative problem-solving, and delivering solutions under professional guidance.</li>
+        <li>Enhanced understanding of software development lifecycle (SDLC) and project documentation within an industry setting.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- PROJECTS -->
+  <div class="section">
+    <div class="section-title">Projects</div>
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">Smart Attendance System using Face Recognition</span>
+      </div>
+      <div class="entry-meta">Python &nbsp;·&nbsp; OpenCV &nbsp;·&nbsp; Face Recognition Library &nbsp;·&nbsp; MySQL &nbsp;·&nbsp; Git &nbsp;·&nbsp; GitHub</div>
+      <ul class="bullets">
+        <li>Architected and developed an AI-powered attendance management system that automatically identifies registered students using facial recognition technology, eliminating manual attendance processes.</li>
+        <li>Implemented real-time face detection and recognition pipeline using OpenCV and the face_recognition library, applying core Computer Vision concepts to achieve accurate identification.</li>
+        <li>Designed and integrated a structured MySQL database schema for secure and efficient storage of student profiles, registration data, and timestamped attendance records.</li>
+        <li>Built a complete student registration module enabling seamless onboarding of new users with image capture and database entry.</li>
+        <li>Reduced manual attendance errors and improved tracking accuracy by automating the identification workflow using Python-based AI logic.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- CERTIFICATIONS -->
+  <div class="section">
+    <div class="section-title">Certifications</div>
+    <div class="cert-list">
+      <div class="cert-item">Introduction to AI &amp; ChatGPT</div>
+      <div class="cert-item">Programming Fundamentals using Python</div>
+      <div class="cert-item">Basics of Python</div>
+    </div>
+  </div>
+
+  <!-- SOFT SKILLS + LANGUAGES -->
+  <div class="section">
+    <div class="bottom-grid">
+      <div>
+        <div class="section-title">Soft Skills</div>
+        <div class="soft-tags">Problem Solving &nbsp;·&nbsp; Team Collaboration &nbsp;·&nbsp; Communication<br>Adaptability &nbsp;·&nbsp; Time Management &nbsp;·&nbsp; Quick Learner &nbsp;·&nbsp; Analytical Thinking</div>
+      </div>
+      <div>
+        <div class="section-title">Languages</div>
+        <div class="lang-item">English &nbsp;·&nbsp; Tamil</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
