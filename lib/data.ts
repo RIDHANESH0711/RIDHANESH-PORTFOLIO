@@ -45,7 +45,7 @@ export const personal = {
   phone: '+91 8925633994',
   github: 'https://github.com/RIDHANESH0711',
   linkedin: 'https://www.linkedin.com/in/ridhanesh-t-286092424',
-  resume: '/RIDHANESH_T_Resume.pdf',
+  resume: '/Ridhanesh_T_Resume.pdf',
 };
 
 export const navLinks = [
